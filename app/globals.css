@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 27 100% 50%; /* Changed to orange (#ff9700) */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 27 100% 50%; /* Changed to orange (#ff9700) */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Ensure map container takes full height */
+.mapboxgl-map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Update the user marker styling */
+.user-marker {
+  width: 32px;
+  height: 32px;
+}
+
+/* Modern paw icon styling */
+.lost-dog-marker,
+.found-dog-marker {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.pin-wrapper img{
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+}
+
+.lost-dog-marker:hover .paw-icon,
+.found-dog-marker:hover .paw-icon {
+  transform: scale(1.1);
+}
+
+/* Custom popup styling */
+.custom-popup .mapboxgl-popup-content {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+  max-width: 300px;
+}
+
+.custom-popup .mapboxgl-popup-close-button {
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+.custom-popup .mapboxgl-popup-close-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.popup-content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.popup-header {
+  padding: 15px;
+  position: relative;
+}
+
+.lost-header {
+  background: linear-gradient(135deg, #ffb74d, #ff9700); /* Orange */
+  color: white;
+}
+
+.found-header {
+  background: linear-gradient(135deg, #fbcfe8, #f472b6); /* Pink */
+  color: white;
+}
+
+.popup-header h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popup-badges {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.popup-badge {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.popup-badge.male {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.popup-badge.female {
+  background: rgba(236, 72, 153, 0.3);
+}
+
+.popup-badge.unknown {
+  background: rgba(107, 114, 128, 0.3);
+}
+
+.popup-image-container {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.popup-image:hover {
+  transform: scale(1.05);
+}
+
+.popup-image-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.popup-description {
+  padding: 15px;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.popup-contact {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.popup-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.popup-icon {
+  color: #6366f1;
+}
+
+.popup-button {
+  margin: 0 15px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lost-button {
+  background: linear-gradient(135deg, #ffb74d, #ff9700); /* Orange */
+  box-shadow: 0 2px 5px rgba(255, 151, 0, 0.3);
+}
+
+.lost-button:hover {
+  background: linear-gradient(135deg, #ff9700, #ed8c00);
+  box-shadow: 0 4px 8px rgba(237, 140, 0, 0.4);
+}
+
+.found-button {
+  background: linear-gradient(135deg, #fbcfe8, #f472b6); /* Pink */
+  box-shadow: 0 2px 5px rgba(244, 114, 182, 0.3);
+}
+
+.found-button:hover {
+  background: linear-gradient(135deg, #f472b6, #db2777);
+  box-shadow: 0 4px 8px rgba(219, 39, 119, 0.4);
+}
+
+.popup-button-icon {
+  stroke-width: 2.5;
+}
+
+/* Modern carousel styling */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  width: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Fix for large size badge */
+.badge-size {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+/* Add at the bottom of the file */
+@supports (height: 100dvh) {
+  .h-\[100dvh\] {
+    height: 100dvh;
+  }
+}
+
+/* Add this to your existing globals.css */
+.perspective-1000 {
+  perspective: 1000px;
+}
+

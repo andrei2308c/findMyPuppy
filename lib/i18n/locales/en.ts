@@ -1,0 +1,398 @@
+export const en = {
+  appName: "FindMyPuppy",
+  openMenu: "Open Menu",
+  addLostPet: "Add Lost Pet",
+  addFoundPet: "Add Found Pet",
+  cancel: "Cancel",
+  changeLanguage: "Change Language",
+  footerText: "FindMyPuppy - Helping reunite pets with their owners",
+  showPetsList: "Show Lost Pets",
+  hidePetsList: "Hide Lost Pets",
+  relocateMe: "Relocate Me",
+
+  timeJustNow: "Just now",
+  timeMinute: "minute ago",
+  timeMinutes: "minutes ago",
+  timeHour: "hour ago",
+  timeHours: "hours ago",
+  timeDay: "day ago",
+  timeDays: "days ago",
+
+  mapMode: {
+    lost: "Lost Pets",
+    found: "Found Pets",
+  },
+
+  mapPin: {
+    lost: "Lost",
+    found: "Found",
+  },
+
+  lostPetsList: {
+    title: "Lost Pets Nearby",
+    pet: "pet",
+    pets: "pets",
+    noPets: "No lost pets reported in your area yet.",
+    contactInfo: "Contact Information",
+    reportedBy: "Reported by",
+    phone: "Phone",
+    reportedTime: "Reported",
+    viewOnMap: "View on Map",
+    searchPlaceholder: "Search by name, color...",
+    filterBy: "Filter by",
+    clearFilters: "Clear filters",
+    clearAll: "Clear all",
+    away: "away",
+  },
+
+  foundPetsList: {
+    title: "Found Pets Nearby",
+    pet: "pet",
+    pets: "pets",
+    noPets: "No found pets reported in your area yet.",
+    contactInfo: "Contact Information",
+    reportedBy: "Reported by",
+    phone: "Phone",
+    reportedTime: "Reported",
+    viewOnMap: "View on Map",
+  },
+
+  locationPrompt: {
+    title: "Share Your Location",
+    description:
+      "FindMyPuppy needs your location to show lost pets in your area and to help you add accurate pins for lost pets.",
+    allow: "Allow",
+    deny: "Not Now",
+  },
+
+  bugReport: {
+    submitting: "Submitting...",
+    success: "Bug report submitted successfully!",
+    successDesc: "Thank you for helping us improve FindMyPuppy.",
+    error: "Error submitting bug report",
+    errorDesc: "Please try again later.",
+  },
+
+  menu: {
+    home: {
+      tabName: "Map",
+      title: "Find Lost Pets",
+      description:
+        "Welcome to FindMyPuppy! Use the map to find lost pets in your area or add information about a lost pet.",
+      backToMap: "Back to Map",
+      feature1: {
+        title: "Lost Pets",
+        desc: "View all reported lost pets in your area",
+      },
+      feature2: {
+        title: "Help Others",
+        desc: "Report sightings to help reunite pets with owners",
+      },
+    },
+    about: {
+      tabName: "About",
+      title: "Our Mission",
+      description:
+        "FindMyPuppy is a community-driven platform designed to help pet owners find their lost pets. Our mission is to reunite as many pets with their owners as possible.",
+      mission: {
+        title: "Reunite Pets & Owners",
+        desc: "We're dedicated to helping lost pets find their way home",
+      },
+      team: {
+        title: "Community Powered",
+        desc: "Built by pet lovers for pet lovers around the world",
+      },
+    },
+    contact: {
+      tabName: "Contact",
+      title: "Get in Touch",
+      description: "Have questions or suggestions? We'd love to hear from you!",
+      sendMessage: "Send Message",
+      reportBug: "Report a Bug",
+      bugDescription: "Please describe the issue you encountered...",
+      submitReport: "Submit Bug Report",
+    },
+    support: {
+      tabName: "Support",
+      title: "Support Our Cause",
+      description: "Help us keep FindMyPuppy running and improving. Your support makes a difference!",
+      donate: "Donate Now",
+      helpUs: "Help Us Grow",
+      oneTime: "One-time Donation",
+      oneTimeDesc: "Support our mission with a single contribution",
+      monthly: "Monthly Support",
+      monthlyDesc: "Become a regular supporter of our cause",
+      installApp: "Install as Mobile App",
+      installDesc: "Use FindMyPuppy like a native app on your phone",
+      iosTab: "iOS",
+      androidTab: "Android",
+      step1: "Step 1",
+      step2: "Step 2",
+      step3: "Step 3",
+      iosStep1: "Open Safari and navigate to FindMyPuppy",
+      iosStep2: "Tap the Share icon at the bottom",
+      iosStep3: 'Scroll down and tap "Add to Home Screen"',
+      androidStep1: "Open Chrome and navigate to FindMyPuppy",
+      androidStep2: "Tap the three dots menu in the top right",
+      androidStep3: 'Select "Add to Home screen"',
+    },
+  },
+
+  addPin: {
+    title: "Add Lost Pet",
+    titleFound: "Add Found Pet",
+    petDetails: "Pet Details",
+    contactInfo: "Contact Information",
+    dogName: "Pet Name",
+    dogNamePlaceholder: "Enter your pet's name",
+    gender: "Gender",
+    male: "Male",
+    female: "Female",
+    unknown: "I don't know",
+    size: "Size",
+    selectSize: "Select size",
+    small: "Small",
+    medium: "Medium",
+    large: "Large",
+    color: "Color",
+    colorPlaceholder: "E.g., Black, Brown, White...",
+    description: "Description",
+    descriptionPlaceholder: "Describe your pet (breed, distinctive features, etc.)",
+    reporterName: "Your Name",
+    reporterNamePlaceholder: "Enter your full name",
+    reporterPhone: "Your Phone",
+    reporterPhonePlaceholder: "Enter your phone number",
+    image: "Pet Photo",
+    uploadImage: "Add Pet Photo",
+    dragOrClick: "Drag and drop or click to upload",
+    addMorePhotos: "Add more photos ({{count}} left)",
+    photosLeft: "photos left",
+    location: "Location",
+    usingCurrentLocation: "Using your current location",
+    noLocation: "Location not available. Please enable location services.",
+    selectOnMap: "Select Location on Map",
+    dragPinToLocation: "Drag the pin to the exact location",
+    dragToPosition: "Drag me to position",
+    confirmLocation: "Confirm Location",
+    submit: "Add Lost Pet",
+    submitFound: "Add Found Pet",
+    submitting: "Adding...",
+    success: "Pin Added Successfully",
+    successDesc: "Your lost pet information has been added to the map.",
+    error: "Error Adding Pin",
+    errorDesc: "There was a problem adding your information. Please try again.",
+    locationError: "Location Required",
+    locationErrorDesc: "Please enable location services to add a pin.",
+    nameRequired: "Name Required",
+    nameRequiredDesc: "Please enter your pet's name.",
+    contactRequired: "Contact Information Required",
+    contactRequiredDesc: "Please provide your name and phone number.",
+    uploading: "Uploading photos...",
+    characteristics: "Characteristics",
+  },
+
+  share: {
+    title: "Share FindMyPuppy",
+    message:
+      "Help reunite lost pets with their owners! Check out FindMyPuppy - a community-driven platform to report and find lost pets in your area.",
+    previewTitle: "Message Preview",
+    copyLink: "Copy Link",
+    linkCopied: "Link copied to clipboard!",
+  },
+  newPinNotification: {
+    newLostPet: "New Lost Pet",
+    newFoundPet: "New Found Pet",
+    newNearby: "New Pet Nearby",
+    nearby: "Nearby",
+    matchFound: "Possible Match Found!",
+    dismiss: "Dismiss",
+    viewOnMap: "View on Map",
+  },
+  desktop: {
+    blog: {
+      title: "Pet Finder Blog",
+      description: "Tips, stories, and resources to help you find or protect your pet.",
+      searchPlaceholder: "Search articles...",
+      noResults: "No results found",
+      noResultsDesc: "Try adjusting your search or filter to find what you're looking for.",
+      clearFilters: "Clear filters",
+      readMore: "Read more",
+    },
+    support: {
+      title: "Support Our Mission",
+      description:
+        "Help us continue reuniting pets with their families. Your support makes all the difference in keeping our platform running and improving.",
+      mostPopular: "Most Popular",
+      donationPlans: {
+        oneTime: {
+          title: "One-time Donation",
+          description: "Support our mission with a single contribution of any amount.",
+          price: "Any amount",
+          features: [
+            "Help reunite pets with their owners",
+            "Support our community initiatives",
+            "Receive a thank you email",
+          ],
+          buttonText: "Donate Now",
+        },
+        monthly: {
+          title: "Monthly Supporter",
+          description: "Become a regular supporter with a monthly donation.",
+          price: "$10/month",
+          features: [
+            "All benefits of one-time donation",
+            "Monthly impact report",
+            "Supporter badge on your profile",
+            "Early access to new features",
+          ],
+          buttonText: "Become a Supporter",
+          highlighted: true,
+        },
+        coffee: {
+          title: "Coffee for the Team",
+          description: "Buy our team a coffee to keep them energized.",
+          price: "$5",
+          features: ["Show appreciation to our team", "Help keep us caffeinated", "Receive a virtual high-five"],
+          buttonText: "Buy a Coffee",
+        },
+      },
+      installApp: {
+        title: "Install as Mobile App",
+        description: "Use FindMyPuppy like a native app on your phone. No app store required!",
+        ios: {
+          title: "iOS Installation",
+          description: 'Open Safari, tap the share icon, and select "Add to Home Screen"',
+        },
+        android: {
+          title: "Android Installation",
+          description: 'Open Chrome, tap the menu button, and select "Add to Home Screen"',
+        },
+      },
+      faq: {
+        title: "Frequently Asked Questions",
+        description: "Find answers to common questions about using FindMyPuppy.",
+        questions: [
+          {
+            question: "How can I report a lost pet?",
+            answer:
+              'To report a lost pet, click on the "Add Lost Pet" button on the main map screen. Fill in the details about your pet, including photos, description, and your contact information. The pin will be added to the map, and nearby users will be notified.',
+          },
+          {
+            question: "What should I do if I found a pet?",
+            answer:
+              'If you found a pet, first check if it has a collar with contact information. If not, click on the "Add Found Pet" button on our map and provide details about the pet you found. Our system will automatically check for matching lost pet reports in the area.',
+          },
+          {
+            question: "How does the notification system work?",
+            answer:
+              "Our notification system alerts users when a lost or found pet is reported within 5km of their location. If you're in \"lost\" mode, you'll be notified about found pets that might match yours, and vice versa. You can click on the notification to view details and contact the reporter.",
+          },
+          {
+            question: "Is the service completely free?",
+            answer:
+              "Yes, FindMyPuppy is completely free to use. We rely on donations and support from our community to keep the service running. If you find our platform helpful, consider supporting us through a donation.",
+          },
+          {
+            question: "How can I install the app on my phone?",
+            answer:
+              'FindMyPuppy is a progressive web app (PWA), which means you don\'t need to download it from an app store. On iOS, open Safari, visit our website, tap the share icon, and select "Add to Home Screen." On Android, open Chrome, tap the menu button, and select "Add to Home Screen."',
+          },
+          {
+            question: "How can I help besides donating?",
+            answer:
+              "There are many ways to help! You can spread the word about FindMyPuppy, share lost pet posts on social media, volunteer to help search for lost pets in your area, or contribute to our open-source code if you're a developer.",
+          },
+        ],
+      },
+      needHelp: {
+        title: "Need More Help?",
+        description:
+          "Can't find the answer you're looking for? Please contact our support team for further assistance.",
+        buttonText: "Contact Support",
+      },
+    },
+    about: {
+      title: "Our Mission & Story",
+      description: "FindMyPuppy was born from a personal experience of loss and the joy of reunion.",
+      story:
+        "Our founder's beloved dog went missing for three weeks, and it was through community support that they were finally reunited.",
+      impact: "Today, we're proud to have helped thousands of families reunite with their beloved companions.",
+      since: "Reuniting pets with their families since 2020",
+      values: {
+        title: "Our Core Values",
+        description: "These principles guide everything we do at FindMyPuppy.",
+      },
+      team: {
+        title: "Meet Our Team",
+        description:
+          "The passionate people behind FindMyPuppy who work tirelessly to reunite pets with their families.",
+      },
+    },
+    contact: {
+      title: "Get in Touch",
+      description: "Have questions, suggestions, or need assistance? We're here to help.",
+      form: {
+        name: "Your Name",
+        email: "Your Email",
+        subject: "Subject",
+        message: "Message",
+        sending: "Sending...",
+        send: "Send Message",
+        success: "Message sent successfully!",
+        successDesc: "We'll get back to you soon.",
+        error: "Error sending message",
+        errorDesc: "Please try again later.",
+      },
+      info: {
+        title: "Contact Information",
+        email: "Email",
+        phone: "Phone",
+        office: "Office",
+      },
+      social: {
+        title: "Follow Us",
+      },
+    },
+  },
+  contact: {
+    form: {
+      name: "Your Name",
+      email: "Your Email",
+      subject: "Subject",
+      message: "Message",
+      sending: "Sending...",
+      send: "Send Message",
+      success: "Message sent successfully!",
+      successDesc: "We'll get back to you soon.",
+      error: "Error sending message",
+      errorDesc: "Please try again later.",
+    },
+  },
+  blog: {
+    title: "Pet Finder Blog",
+    description: "Tips, stories, and resources to help you find or protect your pet.",
+    searchPlaceholder: "Search articles...",
+    noResults: "No results found",
+    noResultsDesc: "Try adjusting your search or filter to find what you're looking for.",
+    clearFilters: "Clear filters",
+    categories: {
+      all: "All",
+      tips: "Tips & Advice",
+      technology: "Technology",
+      stories: "Success Stories",
+      community: "Community",
+    },
+  },
+  back: "Back",
+  next: "Next",
+  footer: {
+    quickLinks: "Quick Links",
+    legal: "Legal",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
+    cookies: "Cookie Policy",
+    description: "Helping reunite lost pets with their owners through community support and modern technology.",
+    rights: "All rights reserved.",
+  },
+}
+
