@@ -12,12 +12,6 @@ Lost Pet Reports: Users can report lost pets, including descriptions and last kn
 Dogs Finding Dogs
 
 Found Pet Listings: Individuals who find stray animals can list them, facilitating reunions.​
-Good Dog
-+5
-Dogs Finding Dogs
-+5
-Humane World for Animals
-+5
 
 Search Functionality: A robust search feature allows users to filter and locate lost or found pets based on various criteria.​
 
